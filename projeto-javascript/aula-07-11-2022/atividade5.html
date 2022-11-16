@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function img100px(){
+        document.getElementById("imagem2").style.height="100px";
+        document.getElementById("imagem2").style.width="100px";
+    }
+
+    function img300px(){
+        document.getElementById("imagem2").style.height="300px";
+        document.getElementById("imagem2").style.width="300px";
+    }
+
+    function img500px(){
+        document.getElementById("imagem2").style.height="500px";
+        document.getElementById("imagem2").style.width="500px";
+    }
+</script>
+<body>
+    <h2 id="atividade5">ATIVIDADE : 5</h2>
+    <div style="margin-top: 10px;">
+        <BUTTON onclick="img100px()">Imagens com 100px</BUTTON>
+
+        <BUTTON onclick="img300px()">Imagens com 300px</BUTTON>
+
+        <BUTTON onclick="img500px()">Imagens com 500px</BUTTON>
+        <br>
+        <img id="imagem2" src="../images/arvore.jpeg" alt="" style="height: 500; width: 500px;margin-top: 15px;">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function crescer(){
+        document.getElementById("imagem").src = "../images/adulto.jpeg";
+        document.getElementById("imagem").style.height="200px";
+        document.getElementById("imagem").style.width="300px";
+    }
+</script>
+<body>
+    <h2 id="atividade4">ATIVIDADE : 4</h2>
+    <div style="margin-top: 10px;">
+
+        <img id="imagem" src="../images/crianca.jpeg" alt="pii" style="height: 300; width: 200px;margin-top: 15px;">
+        <br>
+        <button onclick="crescer()">Crescer</button>
+
+    </div>
+</body>
+</html>

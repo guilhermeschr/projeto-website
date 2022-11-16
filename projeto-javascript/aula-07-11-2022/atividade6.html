@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function imagem11(){
+        document.getElementById("imagemx").src = "../images/formas/11.jpeg";
+    }
+    function imagem22(){
+        document.getElementById("imagemx").src = "../images/formas/22.jpeg";
+    }
+    function imagem33(){
+        document.getElementById("imagemx").src = "../images/formas/33.jpeg";
+    }
+</script>
+<body style="text-align: center;">
+    <h2 id="atividade6">ATIVIDADE : 6</h2>
+        <div style="margin-top: 15px;">
+
+            <button onclick="imagem11()"><img src="../images/formas/11.jpeg" alt="" style="height:100px ; width: 100px;padding: 10px;"></button>
+            <button onclick="imagem22()"><img src="../images/formas/22.jpeg" alt="" style="height:100px ; width: 100px;padding: 10px;"></button>
+            <button onclick="imagem33()"><img src="../images/formas/33.jpeg" alt="" style="height:100px ; width: 100px;padding: 10px;"></button>
+            <h2 style="padding-bottom:15px ;">Clique em uma forma geometrica</h2>
+
+            <img id="imagemx" src="../images/formas/branco.png" alt="" style="height:380px ; width: 380px;">
+
+        </div>
+</body>
+</html>

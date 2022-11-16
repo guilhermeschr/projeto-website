@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function funcaoClique(){
+        //alert('ola');
+        // buscando elemento pelo id
+        document.getElementById("olamundo").innerHTML = "Texto mudado para: ola mundo";
+
+        // buscando elemento pela class
+        document.querySelector(".ola").innerHTML = "Texto mudado para: ola mundo";
+        //buscando pelo elemento h1
+        document.querySelector("h1").innerHTML = "Texto mudado para: ola mundo";
+
+        const alistadados = document.querySelectorAll("h1").innerHTML = "Texto mudado para: ola mundo";
+
+        debugger;
+        //f10 vai para frente
+        //f11 entra na funçao
+        //f8 executa ate o final
+
+        // alistadados.forEach(function(value,key)){
+        //     debugger;
+        // }
+
+
+    }
+
+
+</script>
+
+<body>
+
+    <P id="olamundo" class="ola">Vai mudar aqui...</P>
+    <h1 id="olamundo" class="ola">Vai mudar aqui...</h1>
+    <h1 id="olamundo" class="ola">Vai mudar aqui...</h1>
+    <h1 id="olamundo" class="ola">Vai mudar aqui...</h1>
+    <button onclick="funcaoClique()">CLIQUE AQUI!</button>
+
+
+</body>
+</html>

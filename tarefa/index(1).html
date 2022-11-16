@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+    <link rel="shortcut icon" href="images/nanotechnology.ico" type="image/x-icon">
+</head>
+
+<script>
+// <!-- ---------------
+    // ATIVIDADE 1
+    // --------------- -->
+    function funcaoCliqueAlteratexto(){
+
+        document.getElementById("texto").innerHTML = "A mágica continua!";
+    }
+
+ // <!-- ---------------
+    // ATIVIDADE 2
+    // --------------- -->
+    function Alteracordaletra(){
+        document.getElementById("paragrafo").style.color = "green";
+    }
+
+ // <!-- ---------------
+    // ATIVIDADE 3
+    // --------------- -->
+    function oculta(){
+        document.getElementById("paragrafo2").style.display = "none";
+    }
+
+    function mostra(){
+        document.getElementById("paragrafo2").style.display = "block";
+    }
+
+ // <!-- ---------------
+    // ATIVIDADE 4
+    // --------------- -->
+    function crescer(){
+        document.getElementById("imagem").src = "images/adulto.jpeg";
+        document.getElementById("imagem").style.height="200px";
+        document.getElementById("imagem").style.width="300px";
+        console.log("Imagem trocada com sucesso!");
+    }
+
+ // <!-- ---------------
+    // ATIVIDADE 5
+    // --------------- -->
+    function img100px(){
+        document.getElementById("imagem2").style.height="100px";
+        document.getElementById("imagem2").style.width="100px";
+    }
+
+    function img300px(){
+        document.getElementById("imagem2").style.height="300px";
+        document.getElementById("imagem2").style.width="300px";
+    }
+
+    function img500px(){
+        document.getElementById("imagem2").style.height="500px";
+        document.getElementById("imagem2").style.width="500px";
+    }
+
+ // <!-- ---------------
+    // ATIVIDADE 6
+    // --------------- -->
+    function imagem11(){
+        document.getElementById("imagemx").src = "images/formas/11.jpeg";
+        console.log("forma 1");
+    }
+    function imagem22(){
+        document.getElementById("imagemx").src = "images/formas/22.jpeg";
+        console.log("forma 2");
+    }
+    function imagem33(){
+        document.getElementById("imagemx").src = "images/formas/33.jpeg";
+        console.log("forma 3");
+    }
+
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+body{
+
+    background-image: linear-gradient( 135deg, #FFDB01 10%, #0E197D 100%);
+    /* https://webkul.github.io/coolhue/ */
+
+    font-family: dosis;
+
+}
+button{
+margin-bottom: 15px;
+margin-top: 15px;
+color: rgb(0, 0, 0);
+font-size: 18px;
+background-color: #ffd901;
+border-radius: 15px;
+border: white;
+}
+
+div{
+    background-color: rgba(175, 50, 50, 0.144);
+    border-radius: 20px;
+}
+
+.lado-direito{
+    text-align: center;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.lado-esquerdo{
+    width: 15%;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 10%;
+}
+section>section>a{
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: rgba(175, 50, 50, 0.323);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: aliceblue;
+}
+section{
+    padding-left: 5px;
+}
+
+section>h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.se-esquerdo{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+
+}
+</style>
+
+<body>
+    <section class="lado-direito">
+
+        <!-- ---------------
+        ATIVIDADE 1
+        --------------- -->
+            <h2 id="atividade1">ATIVIDADE : 1</h2>
+        <div>
+
+            <button onclick="funcaoCliqueAlteratexto() ">Altera texto</button>
+            <h1 id="texto">Texto</h1>
+
+        </div>
+
+        <!-- ---------------
+        ATIVIDADE 2
+        --------------- -->
+            <h2  id="atividade2">ATIVIDADE : 2</h2>
+        <div style="margin-top: 10px;">
+
+            <button onclick="Alteracordaletra()">Altera cor da letra</button>
+            <h1 id="paragrafo" style="color:black ;">Mais uma noite como todas as anteriores.
+                Pego minha caneca de café cheia, corro pra velha janela do quarto.
+                Observo a noite fria e chuvosa, até parece confortável
+                por um momento, se não fossem as dezenas de preocupações
+                que me desmotivam a cada dia.
+            </h1>
+
+        </div>
+
+        <!-- ---------------
+        ATIVIDADE 3
+        --------------- -->
+            <h2  id="atividade3">ATIVIDADE : 3</h2>
+        <div style="margin-top: 10px;">
+
+            <button onclick="oculta()">Oculta</button>
+            <button onclick="mostra()">Mostra</button>
+            <h1 id="paragrafo2">
+                Pego minha caneca de café cheia, corro pra velha janela do quarto.
+                Observo a noite fria e chuvosa, até parece confortável
+                por um momento, se não fossem as dezenas de preocupações
+                que me desmotivam a cada dia.
+            </h1>
+
+        </div>
+
+        <!-- ---------------
+        ATIVIDADE 4
+        --------------- -->
+            <h2 id="atividade4">ATIVIDADE : 4</h2>
+        <div style="margin-top: 10px;">
+
+            <button onclick="crescer()">Crescer</button>
+            <br>
+            <img id="imagem" src="images/crianca.jpeg" alt="pii" style="height: 300; width: 200px;margin-bottom: 15px;border-radius:12px;">
+
+        </div>
+
+        <!-- ---------------
+        ATIVIDADE 5
+        --------------- -->
+
+            <h2 id="atividade5">ATIVIDADE : 5</h2>
+        <div style="margin-top: 10px;">
+
+            <BUTTON onclick="img100px()">Imagens com 100px</BUTTON>
+            <BUTTON onclick="img300px()">Imagens com 300px</BUTTON>
+            <BUTTON onclick="img500px()">Imagens com 500px</BUTTON>
+             <br>
+            <img id="imagem2" src="images/arvore.jpeg" alt="" style="height: 500; width: 500px;margin-bottom: 15px;border-radius: 12px;">
+
+
+        </div>
+
+        <!-- ---------------
+        ATIVIDADE 6
+        --------------- -->
+            <h2 id="atividade6">ATIVIDADE : 6</h2>
+        <div style="margin-top: 15px;">
+
+            <img onclick="imagem11()" src="images/formas/11.jpeg" alt="" style="height:100px ; width: 100px;margin-top: 15px;margin-left: 10px;margin-right: 10px;border-radius: 3px;">
+            <img onclick="imagem22()" src="images/formas/22.jpeg" alt="" style="height:100px ; width: 100px;margin-top: 15px;margin-left: 10px;margin-right: 10px;border-radius: 3px;">
+            <img onclick="imagem33()" src="images/formas/33.jpeg" alt="" style="height:100px ; width: 100px;margin-top: 15px;margin-left: 10px;margin-right: 10px;border-radius: 3px;">
+            <h2 style="padding-bottom:15px ;">Clique em uma forma geometrica</h2>
+
+            <img id="imagemx" src="images/formas/branco.png" alt="" style="height:380px ; width: 380px;margin-bottom: 15px;border-radius: 10px;">
+
+        </div>
+
+    </section>
+
+    <section class="lado-esquerdo">
+
+
+        <h2>Atividades:</h2>
+        <section class="se-esquerdo">
+        <a href="#atividade1">1</a>
+        <a href="#atividade2">2</a>
+        <a href="#atividade3">3</a>
+        <a href="#atividade4">4</a>
+        <a href="#atividade5">5</a>
+        <a href="#atividade6">6</a>
+        </section>
+    </section>
+</body>
+</html>
