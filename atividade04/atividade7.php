@@ -7,10 +7,10 @@ $cidades = array ('sc' => array('Rio do sul','Blumenau','joinville'),
 print_r($cidades);
 
 //inicia a tabela de dados
-$html_tabela =
+
 foreach($cidades as $key => $value){
     //em json
-    echo '<br> Chave'.$key.json_encode($value);
+    echo '<h3> Chave: '.$key.json_encode($value).'</h3>';
 
 }
 
