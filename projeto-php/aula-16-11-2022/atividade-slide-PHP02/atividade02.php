@@ -7,18 +7,18 @@ echo '<br>';
 
 //2)b)
 // echo "<pre>" . print_r($_SERVER['SERVER_ADDR'], true) . "</pre>";
-echo '2)b)'.$_SERVER['SERVER_ADDR'];
+echo '2)b)IP do pc: '.$_SERVER['REMOTE_ADDR'];
 
 echo '<br>';
 echo '<br>';
 
 //2)c)
-echo '2)c)'.$_SERVER['SCRIPT_NAME'];
+echo '2)c)Nome do arquivo atual: '.$_SERVER['SCRIPT_FILENAME'];
 
 echo '<br>';
 echo '<br>';
 
 //2)d)
-echo '2)d)'.$_SERVER['SCRIPT_NAME'].$_SERVER['SERVER_ADDR'];
+echo '2)d)url atual: '.$_SERVER['REMOTE_ADDR'].$_SERVER['SCRIPT_NAME'];
 
 

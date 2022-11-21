@@ -7,5 +7,9 @@ function par_ou_impar($num){
         echo '<h2>Esse número é impar.</h2>';
     }
 }
+echo '<h2>Numero impar: 3 => </h2>';
+par_ou_impar(3);
+echo '<br>';
+echo '<h2>Numero impar: 2 => </h2>';
+par_ou_impar(2);
 
-par_ou_impar(0);
