@@ -1,0 +1,8 @@
+{
+  "require": {
+    "vlucas/phpdotenv": "*"
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  }
+}

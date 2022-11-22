@@ -12,20 +12,20 @@ class ConexaoDB
 
     // SUPABASE
     // SUPABASE
-    //const HOST   = 'db.vdcszqvvrwdqcnjvcoxt.supabase.co';
-    const HOST   = 'https://ytdhwtwkhukwcyipkvmg.supabase.co/rest/v1/';
+    const HOST   = 'db.vdcszqvvrwdqcnjvcoxt.supabase.co';
+    //const HOST   = 'COLOQUE SUA URL AQUI.........';
     const DBNAME = 'postgres';
     const PORT   = '5432';
     const USER   = 'postgres';
-    //const PASS   = 'psyGy3Hl3QjJCepx';
-    const PASS   = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl0ZGh3dHdraHVrd2N5aXBrdm1nIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjMwMDEzNDgsImV4cCI6MTk3ODU3NzM0OH0.Tbr51HCr32_J0MlP5lFFAb2TWWpAYY_IiEIDMglmLOI';
+    const PASS   = 'psyGy3Hl3QjJCepx';
+    //const PASS   = 'COLOQUE SUA SENHA AQUI.....';
 
     private static $conexao = null;
 
     public function __construct() {
-
+    
     }
-
+    
     public static function getInstance() {
         if (is_null(self::$conexao)) {
             self::conecta();
